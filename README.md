@@ -36,7 +36,7 @@ import (
     "github.com/sheepla/tdloader"
 )
 
-func TestDoSomething(*testing.T) {
+func TestDoSomething(t *testing.T) {
     testdata := tdloader.GetFile("_testdata/data1.json")
     if err := DoSomethingWithFile(testdata); err != nil {
         t.Fatal(err)
