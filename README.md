@@ -10,7 +10,7 @@ You can load test data simply by specifying a relative path from the Git reposit
 The following functions can be used to load test data.
 
 - `GetPath` - Resolve full path of test data
-- `GetFile` - Open test data file and get `*os.File`. Since the os.File type implements the Read method, it can also be treated as the `io.Reder` type.
+- `GetFile` - Open test data file and get `*os.File`. Since the `os.File` type implements the `func (f *File) Read(b []byte) (n int, err error)` method, it can also be treated as the `io.Reder` type.
 - `GetBytes` - Get the contents of the test data file as a bytes.
 - `GetString` - Get the contents of the test data file as a string
 
@@ -44,6 +44,12 @@ func TestDoSomething(*testing.T) {
 
     // -- snip --
 }
+```
+
+## Installation
+
+```go
+go get github.com/sheepla/tdloader
 ```
 
 ## Notice
