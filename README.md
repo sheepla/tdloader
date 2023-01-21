@@ -48,7 +48,7 @@ func TestDoSomething(*testing.T) {
 
 ## Installation
 
-```go
+```sh
 go get github.com/sheepla/tdloader
 ```
 
@@ -58,7 +58,7 @@ This module runs a `git` command to find the project root directory. When using 
 
 ## License
 
-MIT
+[MIT](https://github.com/sheepla/tdloader/blob/master/LICENSE)
 
 ## Author
 
